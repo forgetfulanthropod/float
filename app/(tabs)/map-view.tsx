@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
+import { Text, View, StyleSheet, Image } from 'react-native';
+import MapView from 'react-native-maps';
 import * as Location from 'expo-location';
+import Marker from '../map-components/marker';
 
 type LocationType = {
   coords: {
@@ -56,12 +57,31 @@ const MapComponent: React.FC = () => {
         }}
       >
         <Marker
-          coordinate={{
-            latitude: location.coords.latitude,
-            longitude: location.coords.longitude,
-          }}
-          title="You are here"
-        />
+          title="YOU ARE HERE"
+          coordinate={location.coords}
+        ></Marker>
+        {/* <Marker
+          title="YOU ARE HERE"
+          coordinate={location.coords}
+        >
+          <View style={{ padding: 10 }}>
+            <Image 
+              source={require('@/assets/images/wheel.png')}
+              style={{
+                width: 50, // Set your desired width
+                height: 50, // Set your desired height
+                borderRadius: 50, // Half of width/height for a circular image, adjust for different shapes
+              }} />
+          </View>
+        </Marker> */}
+        {/* <Marker
+            coordinate={{
+              latitude: location.coords.latitude,
+              longitude: location.coords.longitude,
+            }}
+            image={require('@/assets/images/wheel.png')}
+            title="You are here"
+          /> */}
       </MapView>
     </View>
   );
