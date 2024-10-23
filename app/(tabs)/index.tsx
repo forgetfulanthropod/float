@@ -15,33 +15,10 @@ export default function HomeScreen() {
           style={styles.wheelHeader}
         />
       }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Float is a tool for riding.</ThemedText>
-        <ThemedText>
-          When you share your location, only close friends can see.
-        </ThemedText>
-        <ThemedText>
-          They can follow your ride in real time, seeing your path for the past 10 minutes of riding, or rewind it.
-        </ThemedText>
-        <ThemedText>
-          You can set a meetup location and see who's on the way.
-        </ThemedText>
-        <ThemedText>
-          connect with friends
-        </ThemedText>
-        <ThemedText>
-          join a group
-        </ThemedText>
-        <ThemedText>
-          schedule a ride
-        </ThemedText>
-        <ThemedText>
-          share a ride
-        </ThemedText>
+        <ThemedText type="subtitle" style={{fontSize: 100}}>Float</ThemedText>
+        <ThemedText>Memorable Rides</ThemedText>
+        <ThemedText>Record and remember your journey.</ThemedText>
       </ThemedView>
     </ParallaxScrollView>
   );
