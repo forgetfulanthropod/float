@@ -15,7 +15,9 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~3.2.3",
     "@expo/vector-icons": "^14.0.2",
+    "@google-cloud/firestore": "^7.10.0",
     "@react-native-google-signin/google-signin": "^13.1.0",
     "@react-navigation/native": "^6.0.2",
     "expo": "~51.0.28",
